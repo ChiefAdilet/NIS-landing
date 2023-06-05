@@ -8,14 +8,14 @@
     src: url("../fonts/HeadingPro-ExtraBold.ttf");
 }
 
-body {
+body, input, button, a {
     font-family: Gilroy;
     margin: 0;
+    color: white;
 }
 
 .menu a {
     font-size: 15px;
-    color: white;
     line-height: 1;
     text-decoration: none;
     padding: 14.5px 22px;
@@ -68,15 +68,139 @@ header {
     justify-content: space-between;
 }
 
-h1 {
+h1, h2 {
     font-size: 72px;
     font-family: HeadingPro;
     line-height: 1;
-    color: white;
     text-decoration: uppercase;
     display: block;
+    margin: 0;
 }
 
 h1 span {
     color: #443E3E;
+}
+
+.advantages {
+    background: linear-gradient(114.23deg, #FEC501 0%, #80C242 67.71%);
+}
+
+.advantage-card {
+    padding: 25px 30px;
+    background: #ffffff;
+    border: 2px solid #76c22e;
+    box-shadow: -8px 8px 17px rgba(199, 165, 47, 0.5);
+    border-radius: 22px;
+    min-width: 290px;
+    max-width: 344px;
+    color: #443E3E;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.advantage-card-list .advantage-card:first-child {
+    text-align: right;
+}
+
+.advantage-card-list:nth-child(3) {
+    margin: 62px 0 62px 0;
+}
+
+.advantages h2 {
+    text-align: center;
+    margin-bottom: 53px;
+}
+
+.advantage-card-list:nth-child(3) .advantage-card:first-child {
+    transform: translateX(-20%);
+}
+
+.advantage-card-list:nth-child(3) .advantage-card:last-child {
+    transform: translateX(20%);
+}
+
+.contact-us {
+    background: #80C242;
+}
+
+section {
+    padding: 50px 0;
+    position: relative;
+}
+
+.img-advantage {
+    position: absolute;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub-title {
+    font-size: 24px;
+    display: block;
+    color: white;
+    line-height: 1;
+    margin: 50px 0;
+}
+
+.contact-form {
+    width: 50%;
+}
+
+form {
+    width: 460px;
+    position: relative;
+    z-index: 1;
+}
+
+input[type=text],
+input[type=tel],
+button {
+    background: #ffffff;
+    border: 2px solid #76c22e;
+    box-shadow: -8px 8px 17px rgba(121, 199, 47, 0.5);
+    border-radius: 22px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    padding: 25px 0;
+    display: block;
+    outline: none;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+button {
+    background: #FEC501;
+    box-shadow: -8px 8px 17px rgba(121, 199, 47, 0.5), inset 0px -4px 4px rgba(255, 240, 102, 0.25);
+    border-radius: 22px;
+    cursor: pointer;
+    margin: 0;
+}
+
+.img-contact-us {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+footer {
+    background: #80C242;
+    padding: 50px 0;
+    position: relative;
+    text-decoration: none;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.sm-links a {
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 20px;
+}
+.img-footer {
+    margin-right: 50px;
 }
