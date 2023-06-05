@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Gilroy;
+    src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+    font-family: HeadingPro;
+    src: url("../fonts/HeadingPro-ExtraBold.ttf");
+}
+
+body {
+    font-family: Gilroy;
+    margin: 0;
+}
+
+.menu a {
+    font-size: 15px;
+    color: white;
+    line-height: 1;
+    text-decoration: none;
+    padding: 14.5px 22px;
+}
+
+.menu a:not(:last-child) {
+    border-right: 1px solid #EAB602;
+}
+
+header {
+    background: linear-gradient(114.23deg, #FEC501 0%, #80C242 67.71%);
+    padding-top: 27px;
+    position: relative;
+    padding-bottom: 143px;
+}
+
+.navbar {
+    margin-bottom: 83px;
+}
+
+.img-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.img-header {
+    position: absolute;
+    bottom: 0;
+    right: 45px;
+}
+
+.container {
+    width: 1090px;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.jc-space-between {
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 72px;
+    font-family: HeadingPro;
+    line-height: 1;
+    color: white;
+    text-decoration: uppercase;
+    display: block;
+}
+
+h1 span {
+    color: #443E3E;
+}
